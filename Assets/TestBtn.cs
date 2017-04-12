@@ -35,7 +35,7 @@ public class TestBtn : MonoBehaviour {
         {
             GameObject cur;
             cur = Instantiate(tile, new Vector3(10 * c.X(), 0, 10 * c.Y()), Quaternion.identity);
-            Color col = new Color((float)c.filter_results[100]*10,0,0);
+            Color col = new Color((float)c.filter_results[50]*10,0,(float)(1-c.filter_results[50]));
             cur.GetComponent<Renderer>().material.color = col;
         }
         
